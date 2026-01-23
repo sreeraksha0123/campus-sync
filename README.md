@@ -10,6 +10,8 @@
 ## The Solution
 **Campus Sync** is a Progressive Web App (PWA) that centralizes campus communication. It uses **Generative AI** to convert static posters into structured events and syncs them directly to students' **Google Calendars**.
 
+[![Visit Site](https://img.shields.io/badge/Visit%20Site-Campus%20Sync-blue?style=for-the-badge&logo=google-chrome)](https://campus-sync-f1df3.web.app)
+
 ---
 
 ## Key Features
@@ -60,3 +62,43 @@ Follow these steps to set up the project on your local machine.
 - A Firebase project set up
 - A Google Cloud API Key (for Gemini)
 
+### Installation
+
+1. **Clone the Repository**
+   ```bash
+   git clone [https://github.com/Srusti159/campus-sync.git](https://github.com/Srusti159/campus-sync.git)
+   cd campus-sync
+2. **Install Dependencies**
+   ```bash
+   npm install
+
+3. Set Up Environment Variables Create a .env file in the root directory and add keys:
+   ```bash
+   VITE_FIREBASE_API_KEY=your_firebase_api_key
+   VITE_AUTH_DOMAIN=your_project.firebaseapp.com
+   VITE_PROJECT_ID=your_project_id
+   VITE_STORAGE_BUCKET=your_project.appspot.com
+   VITE_MESSAGING_SENDER_ID=your_sender_id
+   VITE_APP_ID=your_app_id
+   VITE_GEMINI_API_KEY=your_gemini_api_key
+   VITE_CALENDAR_API_KEY=your_calendar_api_key
+
+4. Run the Development Server
+   ```bash
+   npm run dev
+
+---
+
+## Future Scope
+   
+### Conversational AI (RAG): Chatbot to answer queries like "When is the next hackathon?".
+### Interactive Campus Maps: Navigate to event venues directly from the app.
+### Admin Analytics: Insights on student engagement and most-synced events.
+
+---
+
+## Team
+   - Srusti S
+   - Sree Raksha S P
+   - Srusti Yadawad
+   - Bhagyajyoti G
