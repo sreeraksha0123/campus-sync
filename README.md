@@ -1,18 +1,62 @@
-# React + Vite
+# 🎓 Campus Sync
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Bridging the Gap Between Administration & Students.** > *An Intelligent Campus Notification & Scheduling System powered by Google Gemini 2.5 Flash Lite.*
 
-Currently, two official plugins are available:
+## The Problem
+- **Information Overload:** Critical updates get lost in spammy WhatsApp groups and cluttered emails.
+- **Manual Friction:** Admins waste time manually typing event details.
+- **Missed Opportunities:** Students often forget deadlines because notices aren't synced to their personal tools.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## The Solution
+**Campus Sync** is a Progressive Web App (PWA) that centralizes campus communication. It uses **Generative AI** to convert static posters into structured events and syncs them directly to students' **Google Calendars**.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Key Features
 
-Note: This will impact Vite dev & build performances.
+### 1. AI-Powered "Zero-Type" Upload
+- **Admins** simply upload a raw poster image.
+- **Google Gemini 2.5 Flash** scans the image and automatically extracts:
+  - Event Title
+  - Date & Time
+  - Venue
+  - Description
+- **Result:** Data entry reduced from 5 minutes to 10 seconds.
 
-## Expanding the ESLint configuration
+### 2. One-Click Google Calendar Sync
+- Deep integration with the **Google Calendar API**.
+- Students can add events to their personal schedule with a single tap.
+- Includes automated reminders (e.g., "Hackathon starts in 1 hour").
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 3. Student Dashboard
+- **USN-Based Login:** Customizes the feed based on Branch and Year.
+- **4 Dedicated Pillars:**
+  1. **Academic:** Official exams & schedules.
+  2. **Clubs:** Recruitment, seminars, cultural meets.
+  3. **Competitions:** Hackathons & inter-college contests.
+  4. **Placements:** Job drives & internship alerts.
+
+---
+
+## Tech Stack
+
+| Component | Technology |
+| :--- | :--- |
+| **Frontend** | React.js, Vite, Tailwind CSS |
+| **Backend / DB** | Firebase Firestore (Real-time NoSQL) |
+| **Authentication** | Firebase Auth (Custom USN Logic) |
+| **AI Engine** | **Google Gemini 2.5 Flash API** |
+| **Integrations** | Google Calendar API |
+| **Hosting** | Firebase Hosting |
+
+---
+
+## How to Run Locally
+
+Follow these steps to set up the project on your local machine.
+
+### Prerequisites
+- Node.js installed
+- A Firebase project set up
+- A Google Cloud API Key (for Gemini)
+
